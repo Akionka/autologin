@@ -1000,7 +1000,7 @@ function imgui.OnDrawFrame()
             end
             if imgui.Button('Bug report [VK]', imgui.ImVec2(150, 0)) then os.execute('explorer "https://vk.com/akionka"') end
             imgui.SameLine()
-            if imgui.Button('Bug report [Telegram]', imgui.ImVec2(150, 0)) then os.execute('explorer "https://teleg.run/akionka"') end
+            if imgui.Button('Bug report [Telegram]', imgui.ImVec2(150, 0)) then os.execute('explorer "https://t.me/akionka"') end
             if
             imgui.Checkbox('Больше меня не спрашивать об удалении аккаунта', temp_buffers.dontAskAboutDeletingAccount) or
             imgui.Checkbox('Больше меня не спрашивать об удалении раздела (проекта)', temp_buffers.dontAskAboutDeletingProject) or
@@ -1258,7 +1258,7 @@ function update(url)
     if status1 == dlstatus.STATUS_ENDDOWNLOADDATA then
       sampAddChatMessage(u8:decode('[Autologin]: Новая версия установлена! Чтобы скрипт обновился нужно либо перезайти в игру, либо ...'), -1)
       sampAddChatMessage(u8:decode('[Autologin]: ... если у вас есть автоперезагрузка скриптов, то новая версия уже готова и снизу вы увидите приветственное сообщение.'), -1)
-      sampAddChatMessage(u8:decode('[Autologin]: Если что-то пошло не так, то сообщите мне об этом в VK или Telegram > {9932cc}vk.com/akionka teleg.run/akionka{FFFFFF}.'), -1)
+      sampAddChatMessage(u8:decode('[Autologin]: Если что-то пошло не так, то сообщите мне об этом в VK или Telegram > {9932cc}vk.com/akionka t.me/akionka{FFFFFF}.'), -1)
       thisScript():reload()
     end
   end)
